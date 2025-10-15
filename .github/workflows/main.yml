@@ -1,0 +1,243 @@
+import React from "react";
+
+export default function AlifCarlmportLanding() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800 antialiased">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-30">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold">A</div>
+            <div>
+              <h1 className="text-lg font-semibold">Alif Carlmport</h1>
+              <p className="text-sm text-gray-500">Dhabata Daldalaa — Quality & Trust</p>
+            </div>
+          </div>
+          <nav className="hidden md:flex gap-6 items-center text-sm">
+            <a href="#home" className="hover:text-indigo-600">Mana</a>
+            <a href="#about" className="hover:text-indigo-600">Waa'ee</a>
+            <a href="#services" className="hover:text-indigo-600">Tajaajiloota</a>
+            <a href="#products" className="hover:text-indigo-600">Ogeessa</a>
+            <a href="#contact" className="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm">Nu Quunnamaa</a>
+          </nav>
+          <div className="md:hidden">
+            {/* Mobile menu placeholder */}
+            <button aria-label="menu" className="px-3 py-2 rounded-md border">Menu</button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section id="home" className="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">Alif Carlmport — Si'aayina Daldalaa Keessan</h2>
+          <p className="mt-4 text-gray-600 text-lg">Bouqa'aa fi tajaajila amanamaa: meeshalee, geejjiba, fi deeggarsa daldalaa guutuu tokkoon tokkoon barbaachisummaa keessanii.</p>
+
+          <div className="mt-8 flex gap-4">
+            <a href="#contact" className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium shadow">Nu Quunnamaa</a>
+            <a href="#services" className="inline-block border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium">Tajaajiloota Ilaali</a>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <div className="p-4 bg-white rounded-lg shadow-sm">
+              <h4 className="font-semibold">Bu'aa 1</h4>
+              <p className="text-sm text-gray-500 mt-1">Meeshaalee qulqullina ol'aanaa.</p>
+            </div>
+            <div className="p-4 bg-white rounded-lg shadow-sm">
+              <h4 className="font-semibold">Tajaajila 24/7</h4>
+              <p className="text-sm text-gray-500 mt-1">Gargaarsa yeroo barbaaddan.</p>
+            </div>
+            <div className="p-4 bg-white rounded-lg shadow-sm">
+              <h4 className="font-semibold">Konkolaatota Amanamoo</h4>
+              <p className="text-sm text-gray-500 mt-1">Goggogaa fi geejjiba nibsuura.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex-1">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1200&q=60" alt="Alif Carlmport" className="w-full h-80 object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-2xl font-bold">Waa'ee Alif Carlmport</h3>
+            <p className="mt-4 text-gray-600">Alif Carlmport dhaabbata daldalaa sirna qabeessa fi amanamaa dha. Yeroo dheeraaf muuxannoo geejjibaa, tajaajila suphaa fi gurgurtaa irratti hojjetaa jirra. Kaayyoon keenya maamiltoota keenyaaf bu'aa sadarkaa ol'aanaatti dhiyeessuudha.</p>
+
+            <ul className="mt-4 space-y-2 text-gray-600">
+              <li>• Tajaajila gurgurtaa fi raabsaa</li>
+              <li>• Geejjiba biyya keessaa fi alaa</li>
+              <li>• Deeggarsa maamilaa fi suphaa</li>
+            </ul>
+
+          </div>
+          <div className="space-y-4">
+            <div className="p-6 bg-gray-50 rounded-xl shadow-inner">
+              <h4 className="font-semibold">Ol'aantummaa keenya</h4>
+              <p className="text-sm text-gray-500 mt-2">Hojii yeroo fi qulqullina irratti xiyyeeffannee hojjenna. Amantii fi walitti dhufeenya guutuu of keessatti qabna.</p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl shadow-inner">
+              <h4 className="font-semibold">Hiriyaa hojii</h4>
+              <p className="text-sm text-gray-500 mt-2">Maamiltoota keenya waliin waliin hojjechuu fi guddachuuf karoorfannee jirra.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="max-w-6xl mx-auto px-6 py-16">
+        <h3 className="text-2xl font-bold text-center">Tajaajiloota Keenya</h3>
+        <p className="text-center text-gray-500 mt-2">Tajaajiloota bal'aa fi bu'a qabeessa kanneen armaan gadii keessa jiru.</p>
+
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h4 className="font-semibold">Gurgurtaa fi Rahaa</h4>
+            <p className="text-sm text-gray-500 mt-2">Gatii madaalawaa fi safartuu qulqullinaa waliin.</p>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h4 className="font-semibold">Geejjiba</h4>
+            <p className="text-sm text-gray-500 mt-2">Geejjiba ariifachiisaa fi qulqullinaa qabu.</p>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h4 className="font-semibold">Deeggarsa Maamilaa</h4>
+            <p className="text-sm text-gray-500 mt-2">Gargaarsa fi deebii hatattamaa siif kennina.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Products / Catalog preview */}
+      <section id="products" className="bg-indigo-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-2xl font-bold text-center">Ogeessa / Meeshaalee</h3>
+          <p className="text-center text-gray-600 mt-2">Kanneen armaan gadi fakkeenyaaf qofa.</p>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl overflow-hidden shadow">
+              <img src="https://images.unsplash.com/photo-1515165562835-c8c55a77a6d4?auto=format&fit=crop&w=800&q=60" alt="product" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h4 className="font-semibold">Meeshaa A</h4>
+                <p className="text-sm text-gray-500 mt-1">Ibsa gabaabaa meeshaa.</p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="font-bold">$120</span>
+                  <button className="px-3 py-2 bg-indigo-600 text-white rounded">Hire</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow">
+              <img src="https://images.unsplash.com/photo-1519741491370-7f7d2b7b8f2b?auto=format&fit=crop&w=800&q=60" alt="product" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h4 className="font-semibold">Meeshaa B</h4>
+                <p className="text-sm text-gray-500 mt-1">Ibsa gabaabaa meeshaa.</p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="font-bold">$85</span>
+                  <button className="px-3 py-2 bg-indigo-600 text-white rounded">Hire</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow">
+              <img src="https://images.unsplash.com/photo-1520975912439-3b3dd6c6b8c8?auto=format&fit=crop&w=800&q=60" alt="product" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h4 className="font-semibold">Meeshaa C</h4>
+                <p className="text-sm text-gray-500 mt-1">Ibsa gabaabaa meeshaa.</p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="font-bold">$45</span>
+                  <button className="px-3 py-2 bg-indigo-600 text-white rounded">Hire</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h3 className="text-2xl font-bold text-center">Dubbii Maamiltoota</h3>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <p className="text-gray-600">"Tajaajila isaaniitiin baay'ee gammade. Dhugumatti amanamoo dha."</p>
+            <div className="mt-4 font-semibold">— Amanuel</div>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <p className="text-gray-600">"Meeshaalee isaan dhiyeessan qulqullina qabu fi gatii gaariidha."</p>
+            <div className="mt-4 font-semibold">— Hana</div>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <p className="text-gray-600">"Geejjiba saffisaa fi odeeffannoo gaarii arganne."</p>
+            <div className="mt-4 font-semibold">— Yusuf</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold">Nu Quunnamaa</h3>
+            <p className="mt-2 text-gray-600">Barbaachisummaa qabaattu? Nuuf barreessi ykn bilbilaa.</p>
+
+            <div className="mt-6 space-y-4 text-gray-600">
+              <div>
+                <div className="font-semibold">Teessoo</div>
+                <div className="text-sm">Finfinnee, Ethiopia (fake address)</div>
+              </div>
+              <div>
+                <div className="font-semibold">Bilbila</div>
+                <div className="text-sm">+251 9XX XXX XXX</div>
+              </div>
+              <div>
+                <div className="font-semibold">Imeelii</div>
+                <div className="text-sm">info@alifcarlmport.com</div>
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <iframe title="map" className="w-full h-48 rounded" src="https://www.google.com/maps/embed?pb=!1m18" />
+            </div>
+          </div>
+
+          <div>
+            <form className="bg-gray-50 p-6 rounded-xl shadow-sm space-y-4">
+              <div>
+                <label className="text-sm font-medium">Maqaa</label>
+                <input className="mt-1 w-full p-3 rounded border" placeholder="Maqaa keetii" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Imeelii</label>
+                <input className="mt-1 w-full p-3 rounded border" placeholder="email@domain.com" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Ergaa</label>
+                <textarea className="mt-1 w-full p-3 rounded border" rows={5} placeholder="Barreessi..." />
+              </div>
+              <div className="text-right">
+                <button type="button" className="bg-indigo-600 text-white px-6 py-3 rounded">Ergi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-200 py-8">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <div className="font-bold text-lg">Alif Carlmport</div>
+            <div className="text-sm text-gray-400">© {new Date().getFullYear()} Alif Carlmport. Mirgaan eeggama.</div>
+          </div>
+          <div className="flex gap-4 items-center">
+            <a className="text-sm hover:text-white">Tajaajiloota</a>
+            <a className="text-sm hover:text-white">Ogeessa</a>
+            <a className="text-sm hover:text-white">Nu Quunnamaa</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
